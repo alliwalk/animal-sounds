@@ -10,23 +10,6 @@ body {
   text-align: center;
 }
 
-/*.navbar-default {
-	background-color: rgb(130, 202, 250); 
-	color: white;
-	}*/
-
-/*	background-image: url("img/jpg/wg_blurred_backgrounds_9.jpg");
-	background-repeat: repeat-x repeat-y;
-	background-position: top left;
-	padding-top: 10px; Height of the image */
-
-
-/*.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	background-color: rgb( 208, 227, 204);
-}
-*/
-/* Other stuff */
-
 h1 {
 	font-family: 'Lobster', cursive;
 	font-size: 6em;
@@ -63,6 +46,16 @@ p{
 	font-size: 1.2em;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+
 /* All the image stuff */
 
 .animal-row{
@@ -70,7 +63,6 @@ p{
 	margin-bottom: 1em;
 }
 
-/*text-shadow: rgba(255,255,255,0.2) 0px 3px 3px;*/
 img{
 	transform: scale(.8);
 	padding-bottom: 15px;
