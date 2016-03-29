@@ -1,0 +1,415 @@
+body {
+  padding-top: 50px;
+  font-size: 16px;
+  
+  background: url("img/monkeypattern.png");
+
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/*.navbar-default {
+	background-color: rgb(130, 202, 250); 
+	color: white;
+	}*/
+
+/*	background-image: url("img/jpg/wg_blurred_backgrounds_9.jpg");
+	background-repeat: repeat-x repeat-y;
+	background-position: top left;
+	padding-top: 10px; Height of the image */
+
+
+/*.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: rgb( 208, 227, 204);
+}
+*/
+/* Other stuff */
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 6em;
+	color: rgb(219, 161, 89); /*maroon*/
+	text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15); 
+}
+
+h2{
+	text-align: center;
+	padding-bottom: 5px;
+	margin: 10px;
+	font-family: 'Passion One', cursive;
+	text-shadow: rgba(255,255,255,0.2) 0px 3px 3px;
+	color:rgb(35, 31,);
+}
+
+h1.page-header{
+font-family: 'Passion One', cursive;
+}
+
+.about{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	}
+
+p, dl {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70%;
+	}
+p{
+	font-size: 1.2em;
+}
+
+/* All the image stuff */
+
+.animal-row{
+	padding-bottom: 3em;
+	margin-bottom: 1em;
+}
+
+/*text-shadow: rgba(255,255,255,0.2) 0px 3px 3px;*/
+img{
+	transform: scale(.8);
+	padding-bottom: 15px;
+    border-radius:50%;
+    border: 12px solid rgb(126, 189, 194);
+    cursor: pointer;
+    box-shadow: 
+	-webkit-box-shadow: 0px 9px 20px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 9px 20px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 9px 20px -6px rgba(0,0,0,0.75);
+}
+
+
+img:hover{
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+	@keyframes stretch {
+	  0% {
+	 	transform: scale(.8);
+	  }
+	  100% {
+	    transform: scale(1.020);
+	  }
+	}
+
+.gorilla-img {
+	background: url(https://pixabay.com/static/uploads/photo/2015/12/07/20/00/animals-1081306_960_720.jpg) no-repeat;
+	background-size: cover;
+
+	/* make it responsive */
+	max-width: 100%;
+	width:100%;
+	height:auto;
+	display:block;
+	/* div height to be the same as width*/
+	padding-top:100%;
+
+	/* Centering on image`s center*/
+	background-position-y: center;
+	background-position-x: right;
+	background-repeat: no-repeat;
+
+	/* it makes the clue thing, takes smaller dimention to fill div */
+	background-size: cover;
+
+	/* it is optional, for making this div centered in parent*/
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+ }
+ .gorilla-img:hover{
+    /* animation */
+    animation: shift 2s ease infinite alternate;
+   	}
+
+	@keyframes shift{
+		0%,100% { 
+			transform: translate(0,0);
+		}
+		33% {
+			transform: translate(-12px, 0px);
+		}
+		66%{
+			transform: translate(12px,0);
+		}
+	}
+
+ .tiger-img {
+	background: url(https://pixabay.com/static/uploads/photo/2014/10/23/18/56/tiger-500118_960_720.jpg) no-repeat;
+	/* make it responsive */
+	transform: scale(.8);
+	max-width: 100%;
+	width:100%;
+	height:auto;
+	display:block;
+	/* div height to be the same as width*/
+	padding-top:100%;
+
+	/* Centering on image`s center*/
+	background-position-y: center;
+	background-position-x: right;
+	background-repeat: no-repeat;
+
+	/* it makes the clue thing, takes smaller dimention to fill div */
+	background-size: cover;
+
+	/* it is optional, for making this div centered in parent*/
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+.elephant-img {
+	background: url(https://pixabay.com/static/uploads/photo/2016/02/17/15/38/elephant-1205260_960_720.jpg) no-repeat;
+	/* make it responsive */
+	transform: scale(.8);
+	max-width: 100%;
+	width:100%;
+	height:auto;
+	display:block;
+	/* div height to be the same as width*/
+	padding-top:100%;
+
+	/* Centering on image`s center*/
+	background-position-y: center;
+	background-position-x: right;
+	background-repeat: no-repeat;
+
+	/* it makes the clue thing, takes smaller dimention to fill div */
+	background-size: cover;
+
+	/* it is optional, for making this div centered in parent*/
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  
+}
+.elephant-img:hover{
+    /* animation */
+    animation: shrink 6s ease infinite ;
+   	}
+
+	@keyframes shrink{
+		0%, 100% { 
+			transform: scale(.8);
+		}
+		35% {
+			transform: scale(.6);
+		}
+		75%{
+			transform: scale(1.20);
+		}
+	}
+
+.snake-img {
+   background: url(https://pixabay.com/static/uploads/photo/2015/05/03/21/41/snake-751722_960_720.jpg) no-repeat;
+    /* make it responsive */
+    /*cursor:pointer;*/
+    max-width: 100%;
+    width:100%;
+    height:auto;
+    display:block;
+    /* div height to be the same as width*/
+    padding-top:100%;
+    
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    
+    /* it makes the clue thing, takes smaller dimention to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.snake-img:hover{
+    /* animation */
+    animation: shake 300ms ease infinite alternate;
+   	}
+
+	@keyframes shake{
+		0%, 100% { 
+			transform: translate(0,0);
+		}
+		25% {
+			transform: translate(-4px, 0);
+		}
+		75%{
+			transform: translate(4px, 0);
+		}
+	}
+
+.bear-img {
+  background: url(https://pixabay.com/static/uploads/photo/2015/07/24/18/22/brown-bear-858720_960_720.jpg
+) no-repeat;
+    transform: scale(.8);
+
+    /* make it responsive */
+    max-width: 100%;
+    width:100%;
+    height:auto;
+    display:block;
+    /* div height to be the same as width*/
+    padding-top:100%;
+    
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    
+    /* it makes the clue thing, takes smaller dimention to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.bear-img:hover{
+    /* animation */
+    animation: move 900ms ease infinite alternate;
+   	}
+
+	@keyframes move{
+		0%, 100% { 
+			transform: translate(0,0);
+		}
+		25% {
+			transform: translate(8px, -8px);
+		}
+		50% {
+			transform: translate(-8px, 8px);
+		}
+		75%{
+			transform: translate(-8px, -8px);
+		}
+	}
+
+.gator-img {
+    background: url(https://pixabay.com/static/uploads/photo/2014/09/09/02/50/alligator-439890_960_720.jpg) no-repeat;
+    /* make it responsive */
+    max-width: 100%;
+    width:100%;
+    height:auto;
+    display:block;
+    /* div height to be the same as width*/
+    padding-top:100%;
+      
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    
+    /* it makes the clue thing, takes smaller dimention to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* Custom Navbar */
+.navbar-default {
+  background-color: #bb4430;
+  border-color: #d9533c;
+}
+.navbar-default .navbar-brand {
+  color: #fffffd;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f9fbf0;
+}
+.navbar-default .navbar-text {
+  color: #fffffd;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fffffd;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f9fbf0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f9fbf0;
+  background-color: #d9533c;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #f9fbf0;
+  background-color: #d9533c;
+}
+.navbar-default .navbar-toggle {
+  border-color: #d9533c;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #d9533c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fffffd;
+}
+.navbar-default .navbar-collapse,
+.navbar-default {
+  border-color: #fffffd;
+}
+.navbar-default .navbar-link {
+  color: #fffffd;
+}
+.navbar-default .navbar-link:hover {
+  color: #f9fbf0;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav  > li > a {
+    color: #fffffd;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav> li > a:focus {
+    color: #f9fbf0;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #f9fbf0;
+    background-color: #d9533c;
+  }
+}
+
+
+
