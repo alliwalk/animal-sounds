@@ -9,4 +9,4 @@ One page site with CSS3, HTML5, and JavaScript. This site uses Bootstrap for the
 - Custom Navbar - The Bootstrap navbar was colorized with TWBSColor.
 - Sounds - Some I found on sound effects websites. Some I converted from YouTube to mp3.
 
-The final product - http://alliwalk.com/animal-sounds
+The final product - http://alliwalk.github.io/animal-sounds/
